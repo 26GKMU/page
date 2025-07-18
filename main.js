@@ -1,6 +1,11 @@
-window.addEventListener('load', () => {
+const warmupServer = () =>{
   fetch('https://tegaki-memo.onrender.com/memos', { mode: 'no-cors' })
-  .then(res => console.log(res));
   fetch('https://dentaku-ubn8.onrender.com/', { mode: 'no-cors' })
-  .then(res => console.log(res));
+}
+
+window.addEventListener('load', () => {
+  warmupServer();
+  setTimeout(() => {
+    warmupServer();
+  }, 600000);
 });

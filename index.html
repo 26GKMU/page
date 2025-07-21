@@ -3,18 +3,39 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>作品</title>
 </head>
 <body>
-  <h1>作品</h1>
-  <ul>
-    <li>
-      <a href="https://tegaki-memo.onrender.com/memos" >tegaki_memo</a>(読み込みに少し時間がかかります)
-    </li>
-    <li>
-      <a href="https://dentaku-ubn8.onrender.com/" >web電卓</a>(読み込みにかなり時間がかかります)
-    </li>
-  </ul>
+  <header>
+    <div class="title">作品</div>
+  </header>
+  <div class="main">
+    <div class="side">
+      <ul>
+        <li><a href="#tm">tegaki_memo</a></li>
+        <li><a href="#dn">react電卓</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="item" id="tm">
+        <a href="https://tegaki-memo.onrender.com/memos" target="_blank">tegaki_memo</a>(読込に少し時間がかかります)<br>
+        <div class="item_txt">Ruby on Rails: Canvasタグでペイントしてメモとして残せるアプリ<a href="https://github.com/26GKMU/tegaki_memo" target="_blank">Github</a></div>
+        <div class="img_line">
+          <div class="img_block"><img src="./pic/tm01.png" alt="memo一覧画面" width="900" height="600"></div>
+          <div class="img_block"><img src="./pic/tm02.png" alt="memo作成画面" width="900" height="600"></div>
+        </div>
+      </div>
+      <div class="item" id="dn">
+        <a href="https://dentaku-ubn8.onrender.com/" target="_blank">react電卓</a>(読込に時間がかかります)<br>
+        <div class="item_txt">React: react練習用に作成した電卓。計算履歴表示付。<a href="https://github.com/26GKMU/dentaku" target="_blank">Github</a></div>
+        <div class="img_line">
+          <div class="img_block"><img src="./pic/dn01.png" alt="電卓" width="787" height="535"></div>
+          <div class="img_block"><img src="./pic/dn02.png" alt="forスマートフォン" width="950" height="599"></div>
+        </div>  
+      </div>
+    </div>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>

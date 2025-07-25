@@ -21,6 +21,14 @@ body {
   scroll-padding-top:60px;
 }
 
+.appList  {
+  padding-Left: 20px;
+}
+.appList li{
+  list-style:none;
+  margin:20px 0;
+}
+
 .main{
   display: inline-flex;
   height: 100%;
